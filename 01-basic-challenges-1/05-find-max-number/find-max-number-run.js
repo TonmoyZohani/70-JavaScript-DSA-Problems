@@ -1,5 +1,15 @@
-const findMaxNumber = require('./find-max-number');
+const findMaxNumber = (arr) => {
+  let max = arr[0];
 
-const result = findMaxNumber([2, 1, 9, 16, 10]);
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+
+  return max;
+};
+
+const result = findMaxNumber([1, 2, 3, 4, 5, 10, 9, 8, 7, 6]);
 
 console.log(result);
