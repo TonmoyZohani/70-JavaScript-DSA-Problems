@@ -13,5 +13,5 @@ const countOccurrences = (str, let) => {
 
 const result = countOccurrences("hello", "l");
 const result1 = countOccurrences("hello", "z");
-console.log(result);
-console.log(result1);
+// console.log(result);
+// console.log(result1);
