@@ -1,17 +1,14 @@
-function areAllCharactersUnique(str) {
-  let strCode = [];
-
-  for (let i = 0; i < str.length; i++) {
-    strCode.push(str[i].charCodeAt(0));
+function firstUniqChar(s) {
+  for (let i = 0; i < s.length; i++) {
+    if (s.indexOf(s[i]) === s.lastIndexOf(s[i])) {
+      return i;
+    }
   }
 
-  let set = new Set(strCode);
-
-  return [...set].length === str.length;
+  return -1;
 }
 
-console.log(areAllCharactersUnique("abcdefg"));
-console.log(areAllCharactersUnique("abcdefgA"));
-console.log(areAllCharactersUnique("programming"));
-console.log(areAllCharactersUnique(""));
-console.log(areAllCharactersUnique("a"));
+// Example usage:
+console.log(firstUniqChar("leetcode")); // Output: 0
+console.log(firstUniqChar("loveleetcode")); // Output: 2
+console.log(firstUniqChar("aabb")); // Output: -1
