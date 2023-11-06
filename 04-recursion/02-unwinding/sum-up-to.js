@@ -1,3 +1,9 @@
-function sumUpTo() {}
+function sumUpTo(n) {
+  if (n === 1) {
+    return 1;
+  }
 
-module.exports = sumUpTo;
+  return sumUpTo(n - 1) + n;
+}
+
+console.log(sumUpTo(5));
