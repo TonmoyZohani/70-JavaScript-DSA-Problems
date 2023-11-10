@@ -1,4 +1,3 @@
-
 const myFunction = () => {
   return `This is a game`;
 };
@@ -11,6 +10,7 @@ const map1 = new Map([
   [myFunction, "This is function"],
 ]);
 
-
-console.log(map1.get(3));
-console.log(map1.get(myFunction));
+// console.log(map1.get(3));
+// console.log(map1.get(myFunction));
+map1.set(2, "Anan");
+console.log(map1);
