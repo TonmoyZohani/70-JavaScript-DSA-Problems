@@ -1,9 +1,8 @@
 const isValidIPv4 = (input) => {
   const octetes = input.split(".");
-  // return octetes.every((octet) => {
-  //   const num = parseInt(octet);
-  //   return num>=0 &&
-  // });
+  if (octetes.length !== 4) {
+    return false;
+  }
 };
 
 console.log(isValidIPv4("1.2.3.4"));
