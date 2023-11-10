@@ -14,3 +14,14 @@ const map1 = new Map([
 // console.log(map1.get(myFunction));
 map1.set(2, "Anan");
 console.log(map1);
+
+console.log(map1.size);
+map1.delete(myFunction);
+console.log(map1);
+
+for (let [key, value] of map1) {
+  console.log(`${key} = ${value}`);
+}
+
+map1.clear();
+console.log(map1);
